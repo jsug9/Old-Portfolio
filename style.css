@@ -1,0 +1,39 @@
+.topnav{
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: stretch;
+  justify-content: space-between;
+  border-color: transparent;
+}
+
+/* .menu {
+
+  width: 18px;
+  height: 12px;
+  left: 3px;
+  top: 6px;
+
+  background: #6070FF;
+} */
+
+.toggleNav {
+  /* font-size: 40px; */
+  text-decoration: none;
+  width: 18px;
+  height: 12px;
+  left: 3px;
+  top: 6px;
+
+  color: #6070FF;
+}
+
+a:link {
+  color: #6070FF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6070FF;
+  text-decoration: none;
+}
