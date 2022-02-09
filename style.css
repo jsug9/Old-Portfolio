@@ -1,10 +1,9 @@
 .topnav {
   overflow: hidden;
   background-color: white;
-  position: fixed; /* Set the navbar to fixed position */
+  position: relative; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   display: flex;
-  position: relative;
   box-sizing: border-box;
   align-items: stretch;
   justify-content: space-between;
@@ -33,16 +32,16 @@
   height: 20px;
   left: 3px;
   top: 6px;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 a:link {
-  color: #6070FF;
+  color: #6070ff;
   text-decoration: none;
 }
 
 a:visited {
-  color: #6070FF;
+  color: #6070ff;
   text-decoration: none;
 }
 
@@ -52,7 +51,7 @@ a:visited {
   font-size: 20px;
   text-align: center;
   text-decoration: none;
-  color: #505F79;
+  color: #505f79;
 }
 
 /* Add a hover effect if you want */
@@ -61,7 +60,7 @@ a:visited {
 }
 
 .wrapper {
-  max-width:240px;
+  max-width: 240px;
   height: 90vh;
   margin: 5vh auto 5vh auto;
 }
@@ -75,42 +74,50 @@ a:visited {
   display: flex;
   align-items: center;
   text-align: center;
+
   /* Primary/B400 */
-  color: #6070FF;
+  color: #6070ff;
 }
 
 h2 {
+
   /* Header / 2 */
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
+
   /* or 130% */
   display: flex;
   align-items: center;
+
   /* Neutrals/N800 */
-  color: #172B4D;
+  color: #172b4d;
 }
 
 h5 {
+
   /* Body / 2 */
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+
   /* Neutrals/N600 */
   color: #344563;
 }
 
 h4 {
+
   /* Body / 2 - Bolder */
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  
   /* Primary/B300 */
-  color: #7F8CFF;
+  color: #7f8cff;
 }
