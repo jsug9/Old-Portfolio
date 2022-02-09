@@ -1,17 +1,14 @@
-.topnav{
+.topnav {
   overflow: hidden;
   background-color: white;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-
   display: flex;
   position: relative;
   box-sizing: border-box;
   align-items: stretch;
   justify-content: space-between;
-  border-color: transparent;
-
-  
+  border-color: transparent; 
 }
 
 .sections-container {
@@ -36,7 +33,6 @@
   height: 20px;
   left: 3px;
   top: 6px;
-
   color: #6070FF;
 }
 
@@ -76,11 +72,9 @@ a:visited {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-
   display: flex;
   align-items: center;
   text-align: center;
-
   /* Primary/B400 */
   color: #6070FF;
 }
@@ -92,11 +86,9 @@ h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-
   /* or 130% */
   display: flex;
   align-items: center;
-
   /* Neutrals/N800 */
   color: #172B4D;
 }
@@ -108,7 +100,6 @@ h5 {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-
   /* Neutrals/N600 */
   color: #344563;
 }
@@ -120,8 +111,6 @@ h4 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-
-
   /* Primary/B300 */
   color: #7F8CFF;
 }
