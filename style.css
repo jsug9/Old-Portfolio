@@ -7,7 +7,7 @@
   box-sizing: border-box;
   align-items: stretch;
   justify-content: space-between;
-  border-color: transparent; 
+  border-color: transparent;
 }
 
 .sections-container {
@@ -66,7 +66,7 @@ a:visited {
 }
 
 .logo {
-  font-family: Poppins;
+  font-family: Poppins, Arial;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -80,9 +80,8 @@ a:visited {
 }
 
 h2 {
-
   /* Header / 2 */
-  font-family: Poppins;
+  font-family: Poppins, Arial;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -97,9 +96,8 @@ h2 {
 }
 
 h5 {
-
   /* Body / 2 */
-  font-family: Poppins;
+  font-family: Poppins, Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -110,14 +108,12 @@ h5 {
 }
 
 h4 {
-
   /* Body / 2 - Bolder */
-  font-family: Poppins;
+  font-family: Poppins, Arial;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  
   /* Primary/B300 */
   color: #7f8cff;
 }
