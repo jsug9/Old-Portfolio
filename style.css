@@ -72,6 +72,7 @@
 } */
 
 .works-list {
+  display: grid;
   grid-template-rows: repeat(3, auto);
   row-gap: 5.5rem;
   justify-content: center;
@@ -79,7 +80,7 @@
 }
 
 .works-card {
-  margin-bottom: 20px;
+  margin-bottom: -50px;
   padding: 1rem 1rem 1.5rem 1rem;
   display: flex;
   flex-direction: column;
