@@ -1,3 +1,11 @@
+.wrapper {
+  max-width: 350px;
+  height: 100%;
+  margin: 20px auto;
+  background-color: #f7f7f9;
+}
+
+/* Navigation */
 .top-nav {
   overflow: hidden;
   background-color: white;
@@ -10,25 +18,6 @@
   border-color: transparent;
 }
 
-.sections-container {
-  display: flex;
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-}
-
-#headline-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.connect-icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .toggle-nav {
   /* font-size: 40px; */
   text-decoration: none;
@@ -37,54 +26,6 @@
   left: 3px;
   top: 6px;
   color: #6070ff;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-.spacer {
-  height: 70px;
-}
-
-ul {
-  width: 120px;
-  height: 20px;
-  left: 24px;
-  top: 470px;
-  list-style-type: none;
-  margin: 0;
-
-  /* margin-top: -10px; */
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Style all font awesome icons */
-.fa {
-  font-size: 25px;
-  text-decoration: none;
-  color: #505f79;
-}
-
-/* Add a hover effect */
-.fa:hover {
-  opacity: 0.7;
-}
-
-.wrapper {
-  max-width: 350px;
-  height: 90vh;
-  margin: 20px auto;
-  background-image: url(Background/header-shapes-mobile.svg);
-  background-position-y: 72px;
-  background-position-x: center;
-  background-repeat: no-repeat;
 }
 
 .logo {
@@ -101,6 +42,192 @@ ul {
   color: #6070ff;
 }
 
+/* sections */
+.sections-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headline Section */
+.headline-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-bottom-left-radius: 5rem;
+  background-color: white;
+  background-image: url(Resources/Background/header-shapes-mobile.svg);
+  background-position-y: 72px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px 120px 20px;
+}
+
+.headline-description {
+  margin-top: -30px;
+}
+
+.connect-title {
+  margin-top: -15px;
+}
+
+/* Works Section */
+
+.works-list {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 5.5rem;
+  justify-content: center;
+  padding: 7.125rem 0.5rem;
+}
+
+.works-card {
+  margin-bottom: -50px;
+  padding: 1rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 1rem;
+  border: 1px solid #dfe1e6;
+  background-color: white;
+}
+
+.works-card-image {
+  width: 100%;
+}
+
+.works-card-subtitle {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin: 20px 0;
+}
+
+.canopy-text {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.works-card-subtitle-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+}
+
+.works-card-subtitle-element {
+  margin-right: 2rem;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+
+  /* Neutrals/N100 */
+  color: #7a869a;
+}
+
+.works-card-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem 0 1.8rem;
+
+  /* Button / Small */
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  /* identical to box height, or 133% */
+  letter-spacing: 0.03em;
+
+  /* Primary/B400 */
+  color: #6070ff;
+}
+
+.works-card-languages-element {
+  padding: 4px 12px;
+  border-radius: 8px;
+  background: #ebebff;
+}
+
+/* About Myself Section */
+.about-myself-section {
+  padding: 7.125rem 1.5rem;
+  border-top-right-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.about-lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 40px 23px 0;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.language-element {
+  width: 303px;
+  height: 66.72px;
+  left: 12px;
+  top: 12px;
+
+  /* Neutrals/N10 */
+  background: #f7f7f9;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.language-icon {
+  padding: 20px;
+}
+
+.purple-button {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+
+  /* Text Style */
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+}
+
+.purple-button:hover {
+  background-color: #ebebff;
+}
+
+/* Text Style */
 h1 {
   /* Header / 2 */
   font-family: Poppins, sans-serif;
@@ -117,16 +244,34 @@ h1 {
   color: #172b4d;
 }
 
-p {
-  /* Body / 2 */
+h2 {
+  /* Header / 2 */
   font-family: Poppins, sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 52px;
+
+  /* or 130% */
+  display: flex;
+  align-items: center;
+
+  /* Neutrals/N800 */
+  color: #172b4d;
+}
+
+h3 {
+  /* Body / 1 - Bolder */
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 24px;
 
-  /* Neutrals/N600 */
-  color: #344563;
+  /* identical to box height, or 120% */
+  display: flex;
+  align-items: center;
+  color: #000;
 }
 
 h4 {
@@ -139,4 +284,59 @@ h4 {
 
   /* Primary/B300 */
   color: #7f8cff;
+}
+
+p {
+  /* Body / 2 */
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* Neutrals/N600 */
+  color: #344563;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* Connect Icons */
+.connect-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.icons-list {
+  width: 120px;
+  height: 20px;
+  left: 24px;
+  top: 470px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  font-size: 25px;
+  text-decoration: none;
+  color: #505f79;
+}
+
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
