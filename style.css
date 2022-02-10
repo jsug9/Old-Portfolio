@@ -66,6 +66,7 @@
 }
 
 /* Works Section */
+
 /* .works-section { <- to be implemented later
   background: #F7F7F9;
 } */
@@ -122,7 +123,7 @@
   line-height: 16px;
 
   /* Neutrals/N100 */
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .works-card-languages {
@@ -130,9 +131,9 @@
   flex-wrap: wrap;
   gap: 8px;
   margin: 1rem 0 1.8rem;
-  
+
   /* Button / Small */
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -143,18 +144,12 @@
 
   /* Primary/B400 */
   color: #6070ff;
-
-  /* Inside auto layout */
-  /* flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 0px; */
 }
 
 .works-card-languages-element {
   padding: 4px 12px;
   border-radius: 8px;
-  background: #EBEBFF;
+  background: #ebebff;
 }
 
 /* About Myself Section */
@@ -186,7 +181,7 @@
   top: 12px;
 
   /* Neutrals/N10 */
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
 
   /* Inside auto layout */
@@ -194,7 +189,6 @@
   order: 0;
   flex-grow: 0;
   margin: 12px 0px;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -214,16 +208,16 @@
   background-color: white;
 
   /* Text Style */
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396DF2;
+  color: #396df2;
 }
 
 .purple-button:hover {
-  background-color: #EBEBFF;
+  background-color: #ebebff;
 }
 
 /* Text Style */
@@ -270,7 +264,7 @@ h3 {
   /* identical to box height, or 120% */
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
 }
 
 h4 {
