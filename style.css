@@ -1,3 +1,14 @@
+.wrapper {
+  max-width: 350px;
+  height: 90vh;
+  margin: 20px auto;
+  background-image: url(Background/header-shapes-mobile.svg);
+  background-position-y: 72px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+/* Navigation */
 .top-nav {
   overflow: hidden;
   background-color: white;
@@ -10,6 +21,31 @@
   border-color: transparent;
 }
 
+.toggle-nav {
+  /* font-size: 40px; */
+  text-decoration: none;
+  font-size: 30px;
+  width: 18px;
+  left: 3px;
+  top: 6px;
+  color: #6070ff;
+}
+
+.logo {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Primary/B400 */
+  color: #6070ff;
+}
+
+/* sections */
 .sections-container {
   display: flex;
   margin-top: 30px; /* Add a top margin to avoid content overlay */
@@ -23,32 +59,14 @@
   gap: 10px;
 }
 
+.spacer {
+  height: 70px;
+}
+
 .connect-icons {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.toggle-nav {
-  /* font-size: 40px; */
-  text-decoration: none;
-  font-size: 30px;
-  width: 18px;
-  left: 3px;
-  top: 6px;
-  color: #6070ff;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-.spacer {
-  height: 70px;
 }
 
 ul {
@@ -77,30 +95,7 @@ ul {
   opacity: 0.7;
 }
 
-.wrapper {
-  max-width: 350px;
-  height: 90vh;
-  margin: 20px auto;
-  background-image: url(Background/header-shapes-mobile.svg);
-  background-position-y: 72px;
-  background-position-x: center;
-  background-repeat: no-repeat;
-}
-
-.logo {
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  /* Primary/B400 */
-  color: #6070ff;
-}
-
+/* Text Style */
 h1 {
   /* Header / 2 */
   font-family: Poppins, sans-serif;
@@ -117,6 +112,18 @@ h1 {
   color: #172b4d;
 }
 
+h4 {
+  /* Body / 2 - Bolder */
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* Primary/B300 */
+  color: #7f8cff;
+}
+
 p {
   /* Body / 2 */
   font-family: Poppins, sans-serif;
@@ -129,14 +136,10 @@ p {
   color: #344563;
 }
 
-h4 {
-  /* Body / 2 - Bolder */
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+a:link {
+  text-decoration: none;
+}
 
-  /* Primary/B300 */
-  color: #7f8cff;
+a:visited {
+  text-decoration: none;
 }
