@@ -173,6 +173,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 23px 40px 23px 0;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .language-element {
