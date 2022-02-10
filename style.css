@@ -1,11 +1,8 @@
 .wrapper {
   max-width: 350px;
-  height: 90vh;
+  height: 100%;
   margin: 20px auto;
-  background-image: url(Resources/Background/header-shapes-mobile.svg);
-  background-position-y: 72px;
-  background-position-x: center;
-  background-repeat: no-repeat;
+  background-color: #f7f7f9;
 }
 
 /* Navigation */
@@ -49,27 +46,33 @@
 .sections-container {
   display: flex;
   flex-direction: column;
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
 /* Headline Section */
-#headline-section {
+.headline-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
+  border-bottom-left-radius: 5rem;
+  background-color: white;
+  background-image: url(Resources/Background/header-shapes-mobile.svg);
+  background-position-y: 72px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px 120px 20px;
 }
 
-.spacer {
-  height: 70px;
+.headline-description {
+  margin-top: -30px;
+}
+
+.connect-title{
+  margin-top: -15px;
 }
 
 /* Works Section */
-
-/* .works-section { <- to be implemented later
-  background: #F7F7F9;
-} */
 
 .works-list {
   display: grid;
@@ -156,10 +159,12 @@
 /* About Myself Section */
 .about-myself-section {
   padding: 7.125rem 1.5rem;
+  border-top-right-radius: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  background-color: white;
 }
 
 .about-lists {
