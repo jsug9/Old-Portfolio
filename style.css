@@ -1,7 +1,7 @@
 .top-nav {
   overflow: hidden;
   background-color: white;
-  position: relative; /* Set the navbar to fixed position */
+  position: relative;
   top: 0; /* Position the navbar at the top of the page */
   display: flex;
   box-sizing: border-box;
@@ -54,7 +54,7 @@ a:visited {
   color: #505f79;
 }
 
-/* Add a hover effect if you want */
+/* Add a hover effect*/
 .fa:hover {
   opacity: 0.7;
 }
