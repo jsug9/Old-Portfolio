@@ -69,7 +69,69 @@
 
 
 /* About Myself Section */
+.about-myself-section {
+  padding: 7.125rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 
+.about-lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 40px 23px 0;
+}
+
+.language-element {
+  width: 303px;
+  height: 66.72px;
+  left: 12px;
+  top: 12px;
+
+  /* Neutrals/N10 */
+  background: #F7F7F9;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.language-icon {
+  padding: 20px;
+}
+
+.purple-button {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+
+  /* Text Style */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396DF2;
+}
 
 /* Text Style */
 h1 {
@@ -157,18 +219,14 @@ a:visited {
   justify-content: flex-start;
 }
 
-ul {
+.icons-list {
   width: 120px;
   height: 20px;
   left: 24px;
   top: 470px;
-  list-style-type: none;
-  margin: 0;
-
-  /* margin-top: -10px; */
-  padding: 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 /* Style all font awesome icons */
@@ -181,4 +239,10 @@ ul {
 /* Add a hover effect */
 .fa:hover {
   opacity: 0.7;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
