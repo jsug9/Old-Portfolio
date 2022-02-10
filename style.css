@@ -2,7 +2,7 @@
   max-width: 350px;
   height: 90vh;
   margin: 20px auto;
-  background-image: url(Background/header-shapes-mobile.svg);
+  background-image: url(Resources/Background/header-shapes-mobile.svg);
   background-position-y: 72px;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -48,9 +48,11 @@
 /* sections */
 .sections-container {
   display: flex;
+  flex-direction: column;
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
+/* Headline Section */
 #headline-section {
   display: flex;
   flex-direction: column;
@@ -63,37 +65,11 @@
   height: 70px;
 }
 
-.connect-icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+/* Works Section */
 
-ul {
-  width: 120px;
-  height: 20px;
-  left: 24px;
-  top: 470px;
-  list-style-type: none;
-  margin: 0;
 
-  /* margin-top: -10px; */
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
+/* About Myself Section */
 
-/* Style all font awesome icons */
-.fa {
-  font-size: 25px;
-  text-decoration: none;
-  color: #505f79;
-}
-
-/* Add a hover effect */
-.fa:hover {
-  opacity: 0.7;
-}
 
 /* Text Style */
 h1 {
@@ -110,6 +86,36 @@ h1 {
 
   /* Neutrals/N800 */
   color: #172b4d;
+}
+
+h2 {
+  /* Header / 2 */
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 52px;
+
+  /* or 130% */
+  display: flex;
+  align-items: center;
+
+  /* Neutrals/N800 */
+  color: #172b4d;
+}
+
+h3 {
+  /* Body / 1 - Bolder */
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  /* identical to box height, or 120% */
+  display: flex;
+  align-items: center;
+  color: #000000;
 }
 
 h4 {
@@ -142,4 +148,37 @@ a:link {
 
 a:visited {
   text-decoration: none;
+}
+
+/* Connect Icons */
+.connect-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+ul {
+  width: 120px;
+  height: 20px;
+  left: 24px;
+  top: 470px;
+  list-style-type: none;
+  margin: 0;
+
+  /* margin-top: -10px; */
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style all font awesome icons */
+.fa {
+  font-size: 25px;
+  text-decoration: none;
+  color: #505f79;
+}
+
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
 }
