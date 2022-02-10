@@ -66,7 +66,96 @@
 }
 
 /* Works Section */
+/* .works-section { <- to be implemented later
+  background: #F7F7F9;
+} */
 
+.works-list {
+  grid-template-rows: repeat(3, auto);
+  row-gap: 5.5rem;
+  justify-content: center;
+  padding: 7.125rem 0.5rem;
+}
+
+.works-card {
+  margin-bottom: 20px;
+  padding: 1rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 1rem;
+  border: 1px solid #dfe1e6;
+  background-color: white;
+}
+
+.works-card-image {
+  width: 100%;
+}
+
+.works-card-subtitle {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin: 20px 0;
+}
+
+.canopy-text {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.works-card-subtitle-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+}
+
+.works-card-subtitle-element {
+  margin-right: 2rem;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+
+  /* Neutrals/N100 */
+  color: #7A869A;
+}
+
+.works-card-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem 0 1.8rem;
+  
+  /* Button / Small */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  /* identical to box height, or 133% */
+  letter-spacing: 0.03em;
+
+  /* Primary/B400 */
+  color: #6070ff;
+
+  /* Inside auto layout */
+  /* flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px; */
+}
+
+.works-card-languages-element {
+  padding: 4px 12px;
+  border-radius: 8px;
+  background: #EBEBFF;
+}
 
 /* About Myself Section */
 .about-myself-section {
@@ -131,6 +220,10 @@
   font-size: 17px;
   line-height: 24px;
   color: #396DF2;
+}
+
+.purple-button:hover {
+  background-color: #EBEBFF;
 }
 
 /* Text Style */
