@@ -1,4 +1,4 @@
-.topnav {
+.top-nav {
   overflow: hidden;
   background-color: white;
   position: relative; /* Set the navbar to fixed position */
@@ -24,7 +24,7 @@
   background: #6070FF;
 } */
 
-.toggleNav {
+.toggle-nav {
   /* font-size: 40px; */
   text-decoration: none;
   font-size: 20px;
@@ -62,11 +62,11 @@ a:visited {
 .wrapper {
   max-width: 240px;
   height: 90vh;
-  margin: 5vh auto 5vh auto;
+  margin: 5vh auto;
 }
 
 .logo {
-  font-family: "Poppins", Helvetica, Arial, Verdana, Tahoma;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -81,7 +81,7 @@ a:visited {
 
 h2 {
   /* Header / 2 */
-  font-family: "Poppins", Helvetica, Arial, Verdana, Tahoma;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -97,7 +97,7 @@ h2 {
 
 h5 {
   /* Body / 2 */
-  font-family: "Poppins", Helvetica, Arial, Verdana, Tahoma;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -109,7 +109,7 @@ h5 {
 
 h4 {
   /* Body / 2 - Bolder */
-  font-family: "Poppins", Helvetica, Arial, Verdana, Tahoma;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
