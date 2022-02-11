@@ -57,7 +57,7 @@
   gap: 10px;
   border-bottom-left-radius: 5rem;
   background-color: white;
-  background-image: url(Resources/Background/header-shapes-mobile.svg);
+  background-image: url(Resources/Background/Headline-section/header-shapes-mobile.svg);
   background-position-y: 72px;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -225,6 +225,69 @@
 
 .purple-button:hover {
   background-color: #ebebff;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5rem;
+  background-color: #6070ff;
+  background-image: url(Resources/Background/Contact-section/contact-form-shapes-mobile.svg);
+  background-position-y: 20px;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  padding: 120px 20px 120px 20px;
+  margin: 0.8rem 0 2.8rem;
+  margin-top: -40px;
+}
+
+.contact-title {
+  color: white;
+}
+
+.contact-description {
+  color: white;
+  margin: 0.8rem 0 2.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+input {
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #cfd8dc;
+  margin: 10px 0;
+  height: 48px;
+  padding: 0 1rem;
+}
+
+textarea {
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #cfd8dc;
+  margin-top: 8px;
+  padding: 1rem;
+  resize: none;
+}
+
+.submit-btn {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  color: #6070ff;
+  margin: 18px 0;
+  align-self: flex-start;
 }
 
 /* Text Style */
