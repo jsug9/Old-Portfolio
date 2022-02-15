@@ -1,3 +1,11 @@
+:root {
+  --main-theme: #6070ff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .wrapper {
   max-width: 350px;
   height: 100%;
@@ -29,7 +37,6 @@
 }
 
 .logo {
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -120,7 +127,6 @@
 
 .works-card-subtitle-element {
   margin-right: 2rem;
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -137,7 +143,6 @@
   margin: 1rem 0 1.8rem;
 
   /* Button / Small */
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -215,7 +220,6 @@
   background-color: white;
 
   /* Text Style */
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -290,10 +294,13 @@ textarea {
   align-self: flex-start;
 }
 
+.submit-btn:hover {
+  background-color: #ebebff;
+}
+
 /* Text Style */
 h1 {
   /* Header / 2 */
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
@@ -309,7 +316,6 @@ h1 {
 
 h2 {
   /* Header / 2 */
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -325,7 +331,6 @@ h2 {
 
 h3 {
   /* Body / 1 - Bolder */
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -339,7 +344,6 @@ h3 {
 
 h4 {
   /* Body / 2 - Bolder */
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -351,7 +355,6 @@ h4 {
 
 p {
   /* Body / 2 */
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
