@@ -20,7 +20,15 @@ Not available yet
 👤 **Augusto Galindo**
 
 - GitHub: [@jsug9](https://github.com/jsug9)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/augustogalindo/))
+- LinkedIn: [Augusto Galindo](https://www.linkedin.com/in/augustogalindo/)
+
+👤 **Aaron Keegan**
+
+- GitHub: [@AKeeganDev](https://github.com/AKeeganDev)
+
+👤 **Oshane Creary**
+
+- GitHub: [@oshanedesign](https://github.com/oshanedesign)
 
 ## Show your support
 
