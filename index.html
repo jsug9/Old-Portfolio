@@ -2,25 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
   </head>
 
   <body>
     <div class="wrapper">
       <header class="top-nav">
-        <a class="logo" href="#home">My Logo</a>
-        
-        <a href="#" class="toggle-nav">☰</a>
+        <nav>
+          <a class="logo" href="#home">My Logo</a>
+          <ul class="nav-menu">
+            <li class="nav-bar-item">
+              <a href="#portfolio" class="">Portfolio</a>
+            </li>
+            <li class="nav-bar-item">
+              <a href="#about" class="">About</a>
+            </li>
+            <li class="nav-bar-item">
+              <a href="#contact" class="">Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="toggle-nav">☰</a>
+        </nav>
       </header>
 
       <div class="spacer"></div>
   
       <div class="sections-container">
-        <section class="headline-section">
+        <section class="headline-section" id="home">
           <h1>
             I'm Augusto
             Glad to see you!
