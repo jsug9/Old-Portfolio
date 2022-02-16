@@ -120,6 +120,14 @@ body {
   .works-card-text {
     padding: 1rem;
   }
+
+  form {
+    width: 500px;
+  }
+
+  .contact-description {
+    width: 500px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -133,6 +141,14 @@ body {
 
   .works-list {
     padding: 7.125rem 1rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .contact-description {
+    width: 100%;
   }
 }
 
@@ -282,6 +298,7 @@ body {
   box-sizing: border-box;
   border-radius: 8px;
   background-color: white;
+  margin-top: 10px;
 
   /* Text Style */
   font-style: normal;
@@ -336,7 +353,6 @@ form {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 100%;
 }
 
 input {
