@@ -26,6 +26,21 @@ body {
   border-color: transparent;
 }
 
+.nav {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .toggle-nav {
   /* font-size: 40px; */
   text-decoration: none;
@@ -41,10 +56,6 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   /* Primary/B400 */
   color: #6070ff;
 }
