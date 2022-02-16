@@ -2,15 +2,23 @@
   --main-theme: #6070ff;
 }
 
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f9;
+  padding: 0;
+  margin: 0;
 }
 
 .wrapper {
   /* max-width: 350px; */
-  height: 100%;
-  margin: 20px auto;
+  position: relative;
   background-color: #f7f7f9;
+  padding: 0;
 }
 
 /* Navigation */
@@ -78,17 +86,13 @@ body {
   background-position-y: 72px;
   background-position-x: center;
   background-repeat: no-repeat;
-
-  /* padding: 120px 20px; */
-
-  /* Desktop padding */
-  
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .headline-section {
     padding: 120px 18%;
   }
+
   .works-card:nth-child(1), .works-card:nth-child(3) {
     flex-direction: row-reverse;
   }
@@ -96,11 +100,39 @@ body {
   .works-card:nth-child(2), .works-card:nth-child(4) {
     flex-direction: row;
   }
+
+  .works-list {
+    padding: 7.125rem 4rem;
+  }
+
+  .works-card {
+    gap: 3rem;
+    align-items: center;
+    max-width: 1104px;
+    column-gap: 46px;
+    padding: 1.5rem;
+  }
+
+  .works-card-image {
+    width: 50%;
+  }
+
+  .works-card-text {
+    padding: 1rem;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .headline-section {
     padding: 120px 20px;
+  }
+
+  .works-card:nth-child(1), .works-card:nth-child(2) .works-card:nth-child(3), .works-card:nth-child(4) {
+    flex-direction: column;
+  }
+
+  .works-list {
+    padding: 7.125rem 1rem;
   }
 }
 
@@ -119,7 +151,6 @@ body {
   grid-template-rows: repeat(3, auto);
   row-gap: 5.5rem;
   justify-content: center;
-  padding: 7.125rem 0.5rem;
 }
 
 .works-card {
@@ -127,7 +158,7 @@ body {
   padding: 1rem 1rem 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   border-radius: 1rem;
   border: 1px solid #dfe1e6;
   background-color: white;
@@ -216,13 +247,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 23px 40px 23px 0;
+  width: 100%;
   border-bottom: 1px solid #dfe1e6;
 }
 
 .language-element {
-  width: 303px;
+  width: 100%;
   height: 66.72px;
-  left: 12px;
   top: 12px;
 
   /* Neutrals/N10 */
@@ -279,8 +310,17 @@ body {
   background-position-y: 20px;
   background-position-x: right;
   background-repeat: no-repeat;
-  padding: 85px 20px;
+  padding: 0px;
   margin-top: -40px;
+}
+
+.contact-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 85px 20px;
 }
 
 .contact-title {
