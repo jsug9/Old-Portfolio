@@ -78,6 +78,30 @@ body {
   background-position-y: 72px;
   background-position-x: center;
   background-repeat: no-repeat;
+
+  /* padding: 120px 20px; */
+
+  /* Desktop padding */
+  
+}
+
+@media (min-width: 600px) {
+  .headline-section {
+    padding: 120px 18%;
+  }
+  .works-card:nth-child(1), .works-card:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+
+  .works-card:nth-child(2), .works-card:nth-child(4) {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .headline-section {
+    padding: 120px 20px;
+  }
 }
 
 .headline-description {
