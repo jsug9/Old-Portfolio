@@ -29,7 +29,6 @@ body {
 .nav {
   padding: 1rem 1.5rem;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -79,7 +78,6 @@ body {
   background-position-y: 72px;
   background-position-x: center;
   background-repeat: no-repeat;
-  padding: 120px 20px;
 }
 
 .headline-description {
