@@ -150,13 +150,27 @@ nav {
   }
 
   .about-myself-description {
-    width: 45%;
+    width: 40%;
   }
 
   .about-lists {
-    width: 45%;
+    width: 50%;
   }
 
+  .language-elements-list {
+    display: flex;
+  }
+  
+  .language-element {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 4px;
+  }
+  
   form {
     width: 500px;
   }
@@ -217,6 +231,23 @@ nav {
 
   .about-lists {
     width: 100%;
+  }
+
+  .language-elements-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .language-element {
+    height: 66.72px;
+    width: 90%;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 12px;
+  }
+
+  .language-icon {
+    padding: 20px;
   }
 
   form {
@@ -347,25 +378,12 @@ nav {
 }
 
 .language-element {
-  width: 90%;
-  height: 66.72px;
-  top: 12px;
-
   /* Neutrals/N10 */
   background: #f7f7f9;
   border-radius: 8px;
 
   /* Inside auto layout */
-  order: 0;
-  flex-grow: 0;
-  margin: 12px;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.language-icon {
-  padding: 20px;
 }
 
 .purple-button {
