@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo](https://jsug9.github.io/Portfolio/)
+For live demo [click here](https://jsug9.github.io/Portfolio/).
 
 ## Authors
 

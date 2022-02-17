@@ -161,6 +161,10 @@ nav {
     width: 500px;
   }
 
+  .submit-btn {
+    align-self: center;
+  }
+
   .contact-section {
     background-image: url("Resources/Background/Contact-section/contact-form-shapes-desktop.svg");
     background-size: 95%;
@@ -452,7 +456,6 @@ textarea {
   padding: 12px;
   color: #6070ff;
   margin: 18px 0;
-  align-self: flex-start;
   cursor: pointer;
 }
 
