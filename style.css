@@ -22,30 +22,31 @@ body {
 }
 
 /* Navigation */
-.top-nav {
-  overflow: hidden;
+header {
   background-color: white;
   position: relative;
   top: 0; /* Position the navbar at the top of the page */
   display: flex;
+  padding: 1rem 1.5rem;
   box-sizing: border-box;
   align-items: stretch;
   justify-content: space-between;
   border-color: transparent;
 }
 
-.nav {
-  padding: 1rem 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+nav {
   position: relative;
+  display: flex;
+  box-sizing: border-box;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
 .toggle-nav {
@@ -62,7 +63,6 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 20px;
   /* Primary/B400 */
   color: #6070ff;
 }
@@ -115,10 +115,24 @@ body {
 
   .works-card-image {
     width: 50%;
+    height: 100%;
   }
 
   .works-card-text {
     padding: 1rem;
+  }
+
+  .about-myself-section {
+    flex-direction: row;
+    padding: 7.125rem 8rem;
+  }
+  
+  .about-myself-description {
+    width: 45%;
+  }
+  
+  .about-lists {
+    width: 45%;
   }
 
   form {
@@ -141,6 +155,23 @@ body {
 
   .works-list {
     padding: 7.125rem 1rem;
+  }
+
+  .works-card-image {
+    width: 100%;
+  }
+
+  .about-myself-section {
+    flex-direction: column;
+    padding: 7.125rem 3rem;
+  }
+  
+  .about-myself-description {
+    width: 100%;
+  }
+  
+  .about-lists {
+    width: 100%;
   }
 
   form {
@@ -178,10 +209,6 @@ body {
   border-radius: 1rem;
   border: 1px solid #dfe1e6;
   background-color: white;
-}
-
-.works-card-image {
-  width: 100%;
 }
 
 .works-card-subtitle {
@@ -243,32 +270,33 @@ body {
 
 /* About Myself Section */
 .about-myself-section {
-  padding: 7.125rem 1.5rem;
   border-top-right-radius: 5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   background-color: white;
+}
+
+.about-myself-description {
+  align-items: flex-start;
 }
 
 .about-lists {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .about-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 23px 40px 23px 0;
-  width: 100%;
+  padding: 23px 40px 23px 0px;
+  width: 90%;
   border-bottom: 1px solid #dfe1e6;
 }
 
 .language-element {
-  width: 100%;
+  width: 90%;
   height: 66.72px;
   top: 12px;
 
@@ -277,7 +305,7 @@ body {
   border-radius: 8px;
 
   /* Inside auto layout */
-  flex: none;
+  
   order: 0;
   flex-grow: 0;
   margin: 12px;
