@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
   background-color: #f7f7f9;
   padding: 0;
   margin: 0;
@@ -63,6 +63,7 @@ nav {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
+
   /* Primary/B400 */
   color: #6070ff;
 }
@@ -89,15 +90,21 @@ nav {
 }
 
 @media (min-width: 800px) {
+  .toggle-nav {
+    display: none;
+  }
+
   .headline-section {
     padding: 120px 18%;
   }
 
-  .works-card:nth-child(1), .works-card:nth-child(3) {
+  .works-card:nth-child(1),
+  .works-card:nth-child(3) {
     flex-direction: row-reverse;
   }
 
-  .works-card:nth-child(2), .works-card:nth-child(4) {
+  .works-card:nth-child(2),
+  .works-card:nth-child(4) {
     flex-direction: row;
   }
 
@@ -105,7 +112,10 @@ nav {
     padding: 7.125rem 4rem;
   }
 
-  .works-card {
+  .works-card:nth-child(1),
+  .works-card:nth-child(2),
+  .works-card:nth-child(3),
+  .works-card:nth-child(4) {
     gap: 3rem;
     align-items: center;
     max-width: 1104px;
@@ -126,11 +136,11 @@ nav {
     flex-direction: row;
     padding: 7.125rem 8rem;
   }
-  
+
   .about-myself-description {
     width: 45%;
   }
-  
+
   .about-lists {
     width: 45%;
   }
@@ -145,11 +155,15 @@ nav {
 }
 
 @media (max-width: 800px) {
+  .nav-menu {
+    display: none;
+  }
+
   .headline-section {
     padding: 120px 20px;
   }
 
-  .works-card:nth-child(1), .works-card:nth-child(2) .works-card:nth-child(3), .works-card:nth-child(4) {
+  .works-card {
     flex-direction: column;
   }
 
@@ -165,11 +179,11 @@ nav {
     flex-direction: column;
     padding: 7.125rem 3rem;
   }
-  
+
   .about-myself-description {
     width: 100%;
   }
-  
+
   .about-lists {
     width: 100%;
   }
@@ -290,7 +304,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 23px 40px 23px 0px;
+  padding: 23px 40px 23px 0;
   width: 90%;
   border-bottom: 1px solid #dfe1e6;
 }
@@ -305,7 +319,6 @@ nav {
   border-radius: 8px;
 
   /* Inside auto layout */
-  
   order: 0;
   flex-grow: 0;
   margin: 12px;
@@ -355,7 +368,7 @@ nav {
   background-position-y: 20px;
   background-position-x: right;
   background-repeat: no-repeat;
-  padding: 0px;
+  padding: 0;
   margin-top: -40px;
 }
 
@@ -393,7 +406,7 @@ input {
 }
 
 textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
   border-radius: 8px;
   background-color: white;
   border: 1px solid #cfd8dc;
@@ -414,12 +427,12 @@ textarea {
 }
 
 .submit-btn:hover {
-  background-color: rgb(99, 112, 246);
+  background-color: #6370f6;
   color: white;
 }
 
 .submit-btn:active {
-  background-color: rgb(36, 47, 199);
+  background-color: #242fc7;
   color: white;
 }
 
