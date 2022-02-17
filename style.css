@@ -56,6 +56,7 @@ nav {
 
 .nav-bar-link:hover {
   opacity: 0.7;
+  /* Add animation here */
 }
 
 .toggle-nav {
@@ -277,7 +278,6 @@ nav {
 
 .works-list {
   display: grid;
-  grid-template-rows: repeat(3, auto);
   row-gap: 5.5rem;
   justify-content: center;
 }
@@ -406,6 +406,12 @@ nav {
 
 .purple-button:hover {
   background-color: #ebebff;
+  transition: background-color 1s;
+}
+
+.purple-button:active {
+  background-color: #6070ff;
+  color: white;
 }
 
 /* Contact Section */
@@ -588,6 +594,7 @@ a:visited {
 /* Add a hover effect */
 .fa:hover {
   opacity: 0.7;
+  transition: opacity 0.5s;
 }
 
 ul {
