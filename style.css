@@ -160,7 +160,7 @@ nav {
   .language-elements-list {
     display: flex;
   }
-  
+
   .language-element {
     height: 100px;
     width: 100px;
@@ -170,7 +170,7 @@ nav {
     justify-content: center;
     margin: 4px;
   }
-  
+
   form {
     width: 500px;
   }
@@ -237,7 +237,7 @@ nav {
     display: flex;
     flex-direction: column;
   }
-  
+
   .language-element {
     height: 66.72px;
     width: 90%;
