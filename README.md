@@ -15,7 +15,7 @@
 
 For live demo [click here](https://jsug9.github.io/Portfolio/).
 
-## Authors
+## Author
 
 👤 **Augusto Galindo**
 
