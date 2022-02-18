@@ -22,6 +22,8 @@ For live demo [click here](https://jsug9.github.io/Portfolio/).
 - GitHub: [@jsug9](https://github.com/jsug9)
 - LinkedIn: [Augusto Galindo](https://www.linkedin.com/in/augustogalindo/)
 
+## Contributors
+
 👤 **Aaron Keegan**
 
 - GitHub: [@AKeeganDev](https://github.com/AKeeganDev)
