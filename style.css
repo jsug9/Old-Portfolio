@@ -144,7 +144,7 @@ nav {
   }
 
   .works-card-text {
-    padding: 1rem;
+    width: 50%;
   }
 
   .about-myself-section {
@@ -285,6 +285,7 @@ nav {
 }
 
 .works-card {
+  height: fit-content;
   margin-bottom: -50px;
   padding: 1rem 1rem 1.5rem;
   display: flex;
