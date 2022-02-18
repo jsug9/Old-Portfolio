@@ -285,7 +285,7 @@ nav {
 }
 
 .works-card {
-  height: fit-content;
+  block-size: fit-content;
   margin-bottom: -50px;
   padding: 1rem 1rem 1.5rem;
   display: flex;
