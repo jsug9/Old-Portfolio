@@ -380,6 +380,14 @@ nav {
   border-bottom: 1px solid #dfe1e6;
 }
 
+.arrow {
+  transform: rotate(-90deg);
+}
+
+#arrow1 {
+  transform: rotate(0deg);
+}
+
 .language-element {
   /* Neutrals/N10 */
   background: #f7f7f9;
