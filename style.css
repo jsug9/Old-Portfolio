@@ -1,4 +1,10 @@
 /* change color in line 339 to #6B7790 */
+/* Add on line 484 */
+/* .form-label {
+  color: white;
+  font-weight: bold;
+  align-self: flex-start;
+} */
 
 :root {
   --main-theme: #0922ff;
