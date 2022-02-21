@@ -1,10 +1,11 @@
-/* change color in line 339 to #6B7790 */
-/* Add on line 484 */
+/* change color in line 340 to #6B7790 */
+/* Add on line 485 */
 /* .form-label {
   color: white;
   font-weight: bold;
   align-self: flex-start;
 } */
+/* Change border color of works-card to #707582 (line 313) */
 
 :root {
   --main-theme: #0922ff;
