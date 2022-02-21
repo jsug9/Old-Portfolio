@@ -1,5 +1,5 @@
 :root {
-  --main-theme: #6070ff;
+  --main-theme: #0922ff;
 }
 
 html {
@@ -65,7 +65,7 @@ nav {
   /* font-size: 40px; */
   text-decoration: none;
   font-size: 30px;
-  color: #6070ff;
+  color: var(--main-theme);
 }
 
 .logo {
@@ -74,7 +74,7 @@ nav {
   font-size: 18px;
 
   /* Primary/B400 */
-  color: #6070ff;
+  color: var(--main-theme);
 }
 
 /* sections */
@@ -282,7 +282,7 @@ nav {
   line-height: 24px;
 
   /* Primary/B300 */
-  color: #7f8cff;
+  color: var(--main-theme);
 }
 
 /* Works Section */
@@ -353,7 +353,7 @@ nav {
   letter-spacing: 0.03em;
 
   /* Primary/B400 */
-  color: #6070ff;
+  color: var(--main-theme);
 }
 
 .works-card-languages-element {
@@ -410,7 +410,7 @@ nav {
   width: 162px;
   height: 48px;
   padding: 12px;
-  border: 1px solid #6070ff;
+  border: 1px solid var(--main-theme);
   box-sizing: border-box;
   border-radius: 8px;
   background-color: white;
@@ -430,7 +430,7 @@ nav {
 }
 
 .purple-button:active {
-  background-color: #6070ff;
+  background-color: var(--main-theme);
   color: white;
 }
 
@@ -498,7 +498,7 @@ textarea {
   width: 162px;
   height: 48px;
   padding: 12px;
-  color: #6070ff;
+  color: var(--main-theme);
   margin: 18px 0;
   cursor: pointer;
 }
