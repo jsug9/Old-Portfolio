@@ -1,3 +1,5 @@
+/* change color in line 339 to #6B7790 */
+
 :root {
   --main-theme: #0922ff;
 }
@@ -274,7 +276,7 @@ nav {
 
 .connect-title {
   margin-top: -15px;
-  
+
   /* Body / 2 - Bolder */
   font-style: normal;
   font-weight: 500;
