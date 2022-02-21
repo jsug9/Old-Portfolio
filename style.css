@@ -274,6 +274,15 @@ nav {
 
 .connect-title {
   margin-top: -15px;
+  
+  /* Body / 2 - Bolder */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* Primary/B300 */
+  color: #7f8cff;
 }
 
 /* Works Section */
@@ -546,17 +555,6 @@ h3 {
   display: flex;
   align-items: center;
   color: #000;
-}
-
-h4 {
-  /* Body / 2 - Bolder */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-
-  /* Primary/B300 */
-  color: #7f8cff;
 }
 
 p {
