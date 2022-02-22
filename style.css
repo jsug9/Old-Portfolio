@@ -483,6 +483,12 @@ form {
   align-items: stretch;
 }
 
+.form-label {
+  color: white;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
 input {
   border-radius: 8px;
   background-color: white;
