@@ -48,11 +48,11 @@
         </p>
   
         <div class="connect-icons">
-          <h4 class="connect-title">LET'S CONNECT</h4>
+          <p class="connect-title">LET'S CONNECT</p>
           <ul class="icons-list">
-            <li><a href="https://www.linkedin.com/in/augustogalindo/" target="_blank" class="fa fa-linkedin" rel="noopener noreferrer"></a></li>
-            <li><a href="https://github.com/jsug9" target="_blank" class="fa fa-github" rel="noopener noreferrer"></a></li>
-            <li><a href="https://twitter.com/AugustoAl2" target="_blank" class="fa fa-twitter" rel="noopener noreferrer"></a></li>
+            <li><a href="https://www.linkedin.com/in/augustogalindo/" target="_blank" class="fa fa-linkedin" rel="noopener noreferrer" aria-label="Linkedin"></a></li>
+            <li><a href="https://github.com/jsug9" target="_blank" class="fa fa-github" rel="noopener noreferrer" aria-label="Github"></a></li>
+            <li><a href="https://twitter.com/AugustoAl2" target="_blank" class="fa fa-twitter" rel="noopener noreferrer" aria-label="Twitter"></a></li>
           </ul>
         </div>
       </section>
@@ -175,11 +175,11 @@
           </p>
     
           <div class="connect-icons">
-            <h4>LET'S CONNECT</h4>
+            <p class="connect-title">LET'S CONNECT</p>
             <ul class="icons-list">
-              <li><a href="https://www.linkedin.com/in/augustogalindo/" target="_blank" class="fa fa-linkedin" rel="noopener noreferrer"></a></li>
-              <li><a href="https://github.com/jsug9" target="_blank" class="fa fa-github" rel="noopener noreferrer"></a></li>
-              <li><a href="https://twitter.com/AugustoAl2" target="_blank" class="fa fa-twitter" rel="noopener noreferrer"></a></li>
+              <li><a href="https://www.linkedin.com/in/augustogalindo/" target="_blank" class="fa fa-linkedin" rel="noopener noreferrer" aria-label="Linkedin"></a></li>
+              <li><a href="https://github.com/jsug9" target="_blank" class="fa fa-github" rel="noopener noreferrer" aria-label="Github"></a></li>
+              <li><a href="https://twitter.com/AugustoAl2" target="_blank" class="fa fa-twitter" rel="noopener noreferrer" aria-label="Twitter"></a></li>
             </ul>
           </div>
           <button type="button" class="purple-button">Get my resume</button>
@@ -188,7 +188,7 @@
           <li class="about-languages">
             <div class="about-menu">
               <h3 class="about-titles">Languages</h3>
-              <img class="arrow" id="arrow1" src="Resources/Icons/union.svg" alt="arrow" />
+              <img class="arrow" id="arrow1" src="Resources/Icons/union.svg" alt="arrow indicator" />
             </div>
             <ul class="language-elements-list">
               <li class="language-element">
@@ -217,14 +217,14 @@
           <li class="about-frameworks">
             <div class="about-menu">
               <h3 class="about-titles">Frameworks</h3>
-              <img class="arrow" src="Resources/Icons/union.svg" alt="arrow" />
+              <img class="arrow" src="Resources/Icons/union.svg" alt="arrow indicator" />
             </div>
           </li>
 
           <li class="about-skills">
             <div class="about-menu">
               <h3 class="about-titles">Skills</h3>
-              <img class="arrow" src="Resources/Icons/union.svg" alt="arrow" />
+              <img class="arrow" src="Resources/Icons/union.svg" alt="arrow indicator" />
             </div>
           </li>
         </ul>
@@ -235,8 +235,11 @@
           <h2 class="contact-title">Contact me</h2>
           <p class="contact-description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it</p>
           <form id="contact-form" action="https://formspree.io/f/xqknqqja" method="post">
+            <label for="form-name" class="form-label">Name:</label>
             <input type="text" id="form-name" class="contact-form-input" name="name" placeholder="Enter your name" required maxlength="30">
+            <label for="form-email" class="form-label">Email:</label>
             <input type="email" id="form-email" class="contact-form-input" name="email" placeholder="Enter your email" required>
+            <label for="form-message" class="form-label">Message:</label>
             <textarea id="form-message" class="contact-form-message" name="message" placeholder="Write your message here" cols="30" rows="8" required maxlength="500"></textarea>
             <input type="submit" value="Get It Touch" class="submit-btn" />
           </form>

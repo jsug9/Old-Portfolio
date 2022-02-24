@@ -32,6 +32,10 @@ For a live demo of the Portfolio [click here](https://jsug9.github.io/Portfolio/
 
 - GitHub: [@oshanedesign](https://github.com/oshanedesign)
 
+👤 **Catherine Kemigabo**
+
+- GitHub: [@kemigabocatherine](https://github.com/kemigabocatherine)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
