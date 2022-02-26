@@ -22,7 +22,8 @@
     <div class="wrapper">
       <header>
         <a class="logo" href="#home">Augusto</a>
-        <nav>
+        <nav class="navbar" id="myNav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <ul class="nav-menu">
             <li class="nav-bar-item">
               <a href="#portfolio" class="nav-bar-link">Portfolio</a>
@@ -34,8 +35,8 @@
               <a href="#contact" class="nav-bar-link">Contact</a>
             </li>
           </ul>
-          <a href="#" class="toggle-nav">☰</a>
         </nav>
+        <span style="font-size:30px;cursor:pointer" class="toggle-nav" onclick="openNav()">&#9776;</span>
       </header>
   
       <section class="headline-section" id="home">

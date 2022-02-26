@@ -42,6 +42,16 @@ nav {
   justify-content: space-between;
 }
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--main-theme);
+}
+
 .nav-menu {
   gap: 25px;
   display: flex;
@@ -56,7 +66,7 @@ nav {
 
 .nav-bar-link:hover {
   opacity: 0.7;
-  font-size: 15px;
+  font-size: 35px;
   transition: opacity 1s;
   transition: font-size 0.5s;
 }
@@ -101,6 +111,10 @@ nav {
   }
 
   .toggle-nav {
+    display: none;
+  }
+
+  .closebtn {
     display: none;
   }
 
@@ -199,8 +213,50 @@ nav {
     justify-content: space-between;
   }
 
+  .navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #6070FF;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
   .nav-menu {
-    display: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 18px;
+    width: 100%;
+    margin-top: 120px;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .navbar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
   }
 
   .headline-section {
