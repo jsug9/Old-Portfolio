@@ -34,41 +34,8 @@ header {
   border-color: transparent;
 }
 
-nav {
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  align-items: stretch;
-  justify-content: space-between;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--main-theme);
-}
-
-.nav-menu {
-  gap: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
 .nav-bar-link {
   color: #344563;
-}
-
-.nav-bar-link:hover {
-  opacity: 0.7;
-  font-size: 35px;
-  transition: opacity 1s;
-  transition: font-size 0.5s;
 }
 
 .toggle-nav {
@@ -108,6 +75,40 @@ nav {
 @media (min-width: 800px) {
   header {
     justify-content: space-around;
+  }
+
+  nav {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .nav-menu {
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-left: 0px;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .nav-bar-link:hover {
+    opacity: 0.7;
+    font-size: 15px;
+    transition: opacity 1s;
+    transition: font-size 0.5s;
   }
 
   .toggle-nav {
@@ -237,6 +238,13 @@ nav {
     width: 100%;
     margin-top: 120px;
     font-weight: bold;
+  }
+
+  .nav-bar-link:hover {
+    opacity: 0.7;
+    font-size: 35px;
+    transition: opacity 1s;
+    transition: font-size 0.5s;
   }
   
   .navbar a {
