@@ -6,6 +6,14 @@ function closeNav() {
   document.getElementById('myNav').style.width = '0%';
 }
 
+document.getElementById('openbtn').addEventListener('click', () => {
+  openNav();
+});
+
+document.getElementById('closebtn').addEventListener('click', () => {
+  closeNav();
+});
+
 document.querySelectorAll('.nav-bar-item').forEach((n) => n.addEventListener('click', () => {
   document.getElementById('myNav').style.width = '0%';
 }));

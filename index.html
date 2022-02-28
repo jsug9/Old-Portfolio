@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <title>Augusto's Portfolio</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBZLYB2BR6"></script>
@@ -23,7 +29,9 @@
       <header>
         <a class="logo" href="#home">Augusto</a>
         <nav class="navbar" id="myNav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="javascript:void(0)" class="closebtn" id="closebtn"
+            >&times;</a
+          >
           <ul class="nav-menu">
             <li class="nav-bar-item">
               <a href="#portfolio" class="nav-bar-link">Portfolio</a>
@@ -36,24 +44,49 @@
             </li>
           </ul>
         </nav>
-        <span class="toggle-nav" onclick="openNav()">&#9776;</span>
+        <span class="toggle-nav" id="openbtn">&#9776;</span>
       </header>
-  
+
       <section class="headline-section" id="home">
-        <h1>
-          I'm Augusto <br>Glad to see you!
-        </h1>
-  
+        <h1>I'm Augusto <br />Glad to see you!</h1>
+
         <p class="headline-description">
-          I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
+          I'm a software developer! I can help you build a product, feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don't hestiate to contact
+          me.
         </p>
-  
+
         <div class="connect-icons">
           <p class="connect-title">LET'S CONNECT</p>
           <ul class="icons-list">
-            <li><a href="https://www.linkedin.com/in/augustogalindo/" target="_blank" class="fa fa-linkedin" rel="noopener noreferrer" aria-label="Linkedin"></a></li>
-            <li><a href="https://github.com/jsug9" target="_blank" class="fa fa-github" rel="noopener noreferrer" aria-label="Github"></a></li>
-            <li><a href="https://twitter.com/AugustoAl2" target="_blank" class="fa fa-twitter" rel="noopener noreferrer" aria-label="Twitter"></a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/augustogalindo/"
+                target="_blank"
+                class="fa fa-linkedin"
+                rel="noopener noreferrer"
+                aria-label="Linkedin"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/jsug9"
+                target="_blank"
+                class="fa fa-github"
+                rel="noopener noreferrer"
+                aria-label="Github"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/AugustoAl2"
+                target="_blank"
+                class="fa fa-twitter"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              ></a>
+            </li>
           </ul>
         </div>
       </section>
@@ -61,7 +94,11 @@
       <section class="works-section" id="portfolio">
         <ul class="works-list">
           <li class="works-card">
-            <img class="works-card-image" src="Resources/Snapshoot-Portfolio/snapshoot-portfolio1.svg" alt="works card image">
+            <img
+              class="works-card-image"
+              src="Resources/Snapshoot-Portfolio/snapshoot-portfolio1.svg"
+              alt="works card image"
+            />
             <div class="works-card-text">
               <h2 class="works-card-title">Tonic</h2>
               <div class="works-card-subtitle">
@@ -72,7 +109,8 @@
                 </ul>
               </div>
               <p class="works-card-description">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
               </p>
               <ul class="works-card-languages">
                 <li class="works-card-languages-element">html</li>
@@ -86,7 +124,11 @@
           </li>
 
           <li class="works-card">
-            <img class="works-card-image" src="Resources/Snapshoot-Portfolio/snapshoot-portfolio2.svg" alt="works card image">
+            <img
+              class="works-card-image"
+              src="Resources/Snapshoot-Portfolio/snapshoot-portfolio2.svg"
+              alt="works card image"
+            />
             <div class="works-card-text">
               <h2 class="works-card-title">Multi-Post Stories</h2>
               <div class="works-card-subtitle">
@@ -97,7 +139,9 @@
                 </ul>
               </div>
               <p class="works-card-description">
-                Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+                Experimental content creation feature that allows users to add
+                to an existing story over the course of a day without spamming
+                their friends.
               </p>
               <ul class="works-card-languages">
                 <li class="works-card-languages-element">html</li>
@@ -112,7 +156,11 @@
           </li>
 
           <li class="works-card">
-            <img class="works-card-image" src="Resources/Snapshoot-Portfolio/snapshoot-portfolio3.svg" alt="works card image">
+            <img
+              class="works-card-image"
+              src="Resources/Snapshoot-Portfolio/snapshoot-portfolio3.svg"
+              alt="works card image"
+            />
             <div class="works-card-text">
               <h2 class="works-card-title">Facebook 360</h2>
               <div class="works-card-subtitle">
@@ -123,7 +171,9 @@
                 </ul>
               </div>
               <p class="works-card-description">
-                Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                Exploring the future of media in Facebook's first Virtual
+                Reality app; a place to discover and enjoy 360 photos and videos
+                on Gear VR.
               </p>
               <ul class="works-card-languages">
                 <li class="works-card-languages-element">html</li>
@@ -138,7 +188,11 @@
           </li>
 
           <li class="works-card">
-            <img class="works-card-image" src="Resources/Snapshoot-Portfolio/snapshoot-portfolio4.svg" alt="works card image">
+            <img
+              class="works-card-image"
+              src="Resources/Snapshoot-Portfolio/snapshoot-portfolio4.svg"
+              alt="works card image"
+            />
             <div class="works-card-text">
               <h2 class="works-card-title">Uber Navigation</h2>
               <div class="works-card-subtitle">
@@ -149,7 +203,8 @@
                 </ul>
               </div>
               <p class="works-card-description">
-                A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+                A smart assistant to make driving more safe, efficient, and fun
+                by unlocking your most expensive computer: your car.
               </p>
               <ul class="works-card-languages">
                 <li class="works-card-languages-element">html</li>
@@ -167,20 +222,45 @@
 
       <section class="about-myself-section" id="about">
         <div class="about-myself-description">
-          <h2>
-            About <br>Myself
-          </h2>
-  
+          <h2>About <br />Myself</h2>
+
           <p>
-            I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
+            I'm a software developer! I can help you build a product, feature or
+            website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don't hestiate to
+            contact me.
           </p>
-    
+
           <div class="connect-icons">
             <p class="connect-title">LET'S CONNECT</p>
             <ul class="icons-list">
-              <li><a href="https://www.linkedin.com/in/augustogalindo/" target="_blank" class="fa fa-linkedin" rel="noopener noreferrer" aria-label="Linkedin"></a></li>
-              <li><a href="https://github.com/jsug9" target="_blank" class="fa fa-github" rel="noopener noreferrer" aria-label="Github"></a></li>
-              <li><a href="https://twitter.com/AugustoAl2" target="_blank" class="fa fa-twitter" rel="noopener noreferrer" aria-label="Twitter"></a></li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/augustogalindo/"
+                  target="_blank"
+                  class="fa fa-linkedin"
+                  rel="noopener noreferrer"
+                  aria-label="Linkedin"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/jsug9"
+                  target="_blank"
+                  class="fa fa-github"
+                  rel="noopener noreferrer"
+                  aria-label="Github"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/AugustoAl2"
+                  target="_blank"
+                  class="fa fa-twitter"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                ></a>
+              </li>
             </ul>
           </div>
           <button type="button" class="purple-button">Get my resume</button>
@@ -189,28 +269,39 @@
           <li class="about-languages">
             <div class="about-menu">
               <h3 class="about-titles">Languages</h3>
-              <img class="arrow" id="arrow1" src="Resources/Icons/union.svg" alt="arrow indicator" />
+              <img
+                class="arrow"
+                id="arrow1"
+                src="Resources/Icons/union.svg"
+                alt="arrow indicator"
+              />
             </div>
             <ul class="language-elements-list">
               <li class="language-element">
-                <img class="language-icon" src="Resources/Icons/Languages/js.svg" alt="javascript icon" />
-                <p class="languages-text">
-                  JavaScript
-                </p>
+                <img
+                  class="language-icon"
+                  src="Resources/Icons/Languages/js.svg"
+                  alt="javascript icon"
+                />
+                <p class="languages-text">JavaScript</p>
               </li>
 
               <li class="language-element">
-                <img class="language-icon" src="Resources/Icons/Languages/html.svg" alt="HTML icon" />
-                <p class="languages-text">
-                  HTML
-                </p>
+                <img
+                  class="language-icon"
+                  src="Resources/Icons/Languages/html.svg"
+                  alt="HTML icon"
+                />
+                <p class="languages-text">HTML</p>
               </li>
 
               <li class="language-element">
-                <img class="language-icon" src="Resources/Icons/Languages/css.svg" alt="CSS icon" />
-                <p class="languages-text">
-                  CSS
-                </p>
+                <img
+                  class="language-icon"
+                  src="Resources/Icons/Languages/css.svg"
+                  alt="CSS icon"
+                />
+                <p class="languages-text">CSS</p>
               </li>
             </ul>
           </li>
@@ -218,30 +309,70 @@
           <li class="about-frameworks">
             <div class="about-menu">
               <h3 class="about-titles">Frameworks</h3>
-              <img class="arrow" src="Resources/Icons/union.svg" alt="arrow indicator" />
+              <img
+                class="arrow"
+                src="Resources/Icons/union.svg"
+                alt="arrow indicator"
+              />
             </div>
           </li>
 
           <li class="about-skills">
             <div class="about-menu">
               <h3 class="about-titles">Skills</h3>
-              <img class="arrow" src="Resources/Icons/union.svg" alt="arrow indicator" />
+              <img
+                class="arrow"
+                src="Resources/Icons/union.svg"
+                alt="arrow indicator"
+              />
             </div>
           </li>
         </ul>
       </section>
-        
+
       <footer class="contact-section" id="contact">
         <div class="contact-section-container">
           <h2 class="contact-title">Contact me</h2>
-          <p class="contact-description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it</p>
-          <form id="contact-form" action="https://formspree.io/f/xqknqqja" method="post">
+          <p class="contact-description">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I'd love
+            to help with it
+          </p>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xqknqqja"
+            method="post"
+          >
             <label for="form-name" class="form-label">Name:</label>
-            <input type="text" id="form-name" class="contact-form-input" name="name" placeholder="Enter your name" required maxlength="30">
+            <input
+              type="text"
+              id="form-name"
+              class="contact-form-input"
+              name="name"
+              placeholder="Enter your name"
+              required
+              maxlength="30"
+            />
             <label for="form-email" class="form-label">Email:</label>
-            <input type="email" id="form-email" class="contact-form-input" name="email" placeholder="Enter your email" required>
+            <input
+              type="email"
+              id="form-email"
+              class="contact-form-input"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
             <label for="form-message" class="form-label">Message:</label>
-            <textarea id="form-message" class="contact-form-message" name="message" placeholder="Write your message here" cols="30" rows="8" required maxlength="500"></textarea>
+            <textarea
+              id="form-message"
+              class="contact-form-message"
+              name="message"
+              placeholder="Write your message here"
+              cols="30"
+              rows="8"
+              required
+              maxlength="500"
+            ></textarea>
             <input type="submit" value="Get It Touch" class="submit-btn" />
           </form>
         </div>
