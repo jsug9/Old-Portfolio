@@ -4,11 +4,11 @@
 
 > In this project I build a mobile and desktop version of a professional portfolio, using what I learned in HTML and CSS.
 
-
 ## Built With
 
 - HTML
 - CSS
+- JavaScript
 - Figma
 
 ## Live Demo
@@ -35,6 +35,10 @@ For a live demo of the Portfolio [click here](https://jsug9.github.io/Portfolio/
 👤 **Catherine Kemigabo**
 
 - GitHub: [@kemigabocatherine](https://github.com/kemigabocatherine)
+
+👤 **Abraha Kahsay**
+
+- GitHub: [@AbrahaKahsay](https://github.com/AbrahaKahsay)
 
 ## Show your support
 
