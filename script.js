@@ -113,14 +113,14 @@ projectBtns.forEach((button) => {
 });
 
 // When the user clicks on <span> (x), close the modal
-function closeOnClick() {
+
+span.onclick = function closeOnClick() {
   modal.style.display = 'none';
   projectLanguages.innerHTML = '';
-}
-span.onclick = closeOnClick();
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.onclick = function closeOnEvent(event) {
   if (event.target === modal) {
     modal.style.display = 'none';
     projectLanguages.innerHTML = '';
