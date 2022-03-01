@@ -89,35 +89,70 @@ const worksList = document.getElementById('works-list');
 projects.forEach((project, index) => {
   const worksLi = document.createElement('li');
   worksLi.className = 'works-card';
-  const content = `
-    <img
-      class="works-card-image"
-      src=${project.image}
-      alt="works card image"
-    />
-    <div class="works-card-text">
-      <h2 class="works-card-title">${project.name}</h2>
-      <div class="works-card-subtitle">
-        <p class="canopy-text">${project.company}</p>
-        <ul class="works-card-subtitle-list">
-          <li class="works-card-subtitle-element">${project.position}</li>
-          <li class="works-card-subtitle-element">${project.year}</li>
-        </ul>
-      </div>
-      <p class="works-card-description">
-        ${project.description}
-      </p>
-      <ul class="works-card-languages">
-        <li class="works-card-languages-element">html</li>
-        <li class="works-card-languages-element">css</li>
-        <li class="works-card-languages-element">javascript</li>
-      </ul>
-      <button type="button" class="purple-button card-button" id=${index}>
-        See Project
-      </button>
-    </div>
-  `;
-  worksLi.innerHTML = content;
+
+  const worksImg = document.createElement('img');
+  worksImg.setAttribute('class', 'works-card-image')
+  worksImg.setAttribute('src', project.image)
+  worksImg.setAttribute('alt', 'works card image')
+  worksLi.appendChild(worksImg);
+
+  const worksTextDiv = document.createElement('div');
+  worksTextDiv.setAttribute('class', 'works-card-text')
+
+  const worksTitle = document.createElement('h2');
+  worksTitle.setAttribute('class', 'works-card-title')
+  worksTitle.innerHTML = project.name
+  worksTextDiv.appendChild(worksTitle)
+
+  const worksSubTitleDiv = document.createElement('div')
+  worksSubTitleDiv.setAttribute('class', 'works-card-subtitle')
+
+  const worksCompany = document.createElement('p');
+  worksCompany.setAttribute('class', 'canopy-text')
+  worksCompany.innerHTML = project.company
+  worksSubTitleDiv.appendChild(worksCompany)
+
+  const worksCardList = document.createElement('ul')
+  worksCardList.setAttribute('class', 'works-card-subtitle-list')
+
+  const worksPosition = document.createElement('li');
+  worksPosition.innerText = project.position;
+  worksPosition.className = 'works-card-subtitle-element';
+  worksCardList.appendChild(worksPosition);
+
+  const worksYear = document.createElement('li');
+  worksYear.innerText = project.year;
+  worksYear.className = 'works-card-subtitle-element';
+  worksCardList.appendChild(worksYear);
+
+  worksSubTitleDiv.appendChild(worksCardList)
+
+  worksTextDiv.appendChild(worksSubTitleDiv)
+
+  const worksDescription = document.createElement('p');
+  worksDescription.setAttribute('class', 'works-card-description')
+  worksDescription.innerHTML = project.description
+  worksTextDiv.appendChild(worksDescription)
+
+  const worksLanguages = document.createElement('ul')
+  worksLanguages.setAttribute('class', 'works-card-languages')
+  project.tools.forEach((tool) => {
+    const li = document.createElement('li');
+    li.innerText = tool;
+    li.className = 'works-card-languages-element';
+    worksLanguages.appendChild(li);
+  });
+  worksTextDiv.appendChild(worksLanguages)
+
+  const worksButton = document.createElement('button');
+  worksButton.setAttribute('type', 'button')
+  worksButton.setAttribute('class', 'purple-button card-button')
+  worksButton.setAttribute('id', index)
+  worksButton.innerHTML = 'See project'
+  worksTextDiv.appendChild(worksButton)
+
+  worksLi.appendChild(worksTextDiv);
+
   worksList.appendChild(worksLi);
 });
 
@@ -140,8 +175,8 @@ projectBtns.forEach((button) => {
     projectYear.innerHTML = projects[btnId].year;
     projectImage.src = projects[btnId].image;
     projectDescription.innerHTML = projects[btnId].description;
-    projectLive.setAttribute('href', projects[button.id].live);
-    projectSource.setAttribute('href', projects[button.id].source);
+    projectLive.setAttribute('href', projects[btnId].live);
+    projectSource.setAttribute('href', projects[btnId].source);
 
     projects[btnId].tools.forEach((project) => {
       const li = document.createElement('li');
