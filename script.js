@@ -24,7 +24,7 @@ if (window.innerWidth >= 800) {
   document.getElementById('myNav').style.width = 'test';
 }
 
-//Project array
+// Project array
 const projects = [
   {
     name: 'Tonic',
@@ -72,57 +72,57 @@ const projects = [
   },
 ];
 
-//Popup details
-var projectName = document.getElementById('project-name');
-var projectCompany = document.getElementById('company');
-var projectPosition = document.getElementById('position');
-var projectYear = document.getElementById('year');
-var projectImage = document.getElementById('image');
-var projectDescription = document.getElementById('description');
-var projectTools = document.getElementById('tools');
-var projectLanguages = document.getElementById('languages');
+// Popup details
+const projectName = document.getElementById('project-name');
+const projectCompany = document.getElementById('company');
+const projectPosition = document.getElementById('position');
+const projectYear = document.getElementById('year');
+const projectImage = document.getElementById('image');
+const projectDescription = document.getElementById('description');
+const projectLanguages = document.getElementById('languages');
 
 // Modal Popup
-var modal = document.getElementById("popup-modal");
+const modal = document.getElementById('popup-modal');
 
 // Get the button that opens the modal
 const projectBtns = document.querySelectorAll('.card-button');
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-icon")[0];
+const span = document.getElementsByClassName('close-icon')[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 projectBtns.forEach((button) => {
   button.addEventListener('click', () => {
-    let btnId = button.id;
+    const btnId = button.id;
     projectName.innerHTML = projects[btnId].name;
     projectCompany.innerHTML = projects[btnId].company;
     projectPosition.innerHTML = projects[btnId].position;
     projectYear.innerHTML = projects[btnId].year;
     projectImage.src = projects[btnId].image;
     projectDescription.innerHTML = projects[btnId].description;
-  
-    projects[btnId].tools.forEach((item)=>{
-      let li = document.createElement("li");
+
+    projects[btnId].tools.forEach((item) => {
+      const li = document.createElement('li');
       li.innerText = item;
-      li.className = 'works-card-languages-element'
+      li.className = 'works-card-languages-element';
       projectLanguages.appendChild(li);
-    })
+    });
 
     modal.style.display = 'block';
-  })
-})
+  });
+});
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-  projectLanguages.innerHTML = "";
+function closeOnClick() {
+  modal.style.display = 'none';
+  projectLanguages.innerHTML = '';
 }
+span.onclick = closeOnClick();
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    projectLanguages.innerHTML = "";
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+    projectLanguages.innerHTML = '';
   }
-}
+};
