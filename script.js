@@ -80,6 +80,8 @@ const projectYear = document.getElementById('year');
 const projectImage = document.getElementById('image');
 const projectDescription = document.getElementById('description');
 const projectLanguages = document.getElementById('languages');
+const projectLive = document.getElementById('project-live');
+const projectSource = document.getElementById('project-source');
 
 // Modal Popup
 const modal = document.getElementById('popup-modal');
@@ -100,6 +102,8 @@ projectBtns.forEach((button) => {
     projectYear.innerHTML = projects[btnId].year;
     projectImage.src = projects[btnId].image;
     projectDescription.innerHTML = projects[btnId].description;
+    projectLive.setAttribute('href', projects[button.id].live);
+    projectSource.setAttribute('href', projects[button.id].source);
 
     projects[btnId].tools.forEach((item) => {
       const li = document.createElement('li');
