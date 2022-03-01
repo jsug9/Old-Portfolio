@@ -1,3 +1,5 @@
+// Mobile Menu
+
 function openNav() {
   document.getElementById('myNav').style.width = '100%';
 }
@@ -5,8 +7,6 @@ function openNav() {
 function closeNav() {
   document.getElementById('myNav').style.width = '0%';
 }
-
-// Mobile Menu
 
 document.getElementById('openbtn').addEventListener('click', () => {
   openNav();
@@ -16,7 +16,7 @@ document.getElementById('closebtn').addEventListener('click', () => {
   closeNav();
 });
 
-document.querySelectorAll('.nav-bar-item').forEach((n) => n.addEventListener('click', () => {
+document.querySelectorAll('.nav-bar-project').forEach((n) => n.addEventListener('click', () => {
   document.getElementById('myNav').style.width = '0%';
 }));
 
@@ -72,7 +72,7 @@ const projects = [
   },
 ];
 
-// Popup details
+// Project details
 const projectName = document.getElementById('project-name');
 const projectCompany = document.getElementById('company');
 const projectPosition = document.getElementById('position');
@@ -82,6 +82,44 @@ const projectDescription = document.getElementById('description');
 const projectLanguages = document.getElementById('languages');
 const projectLive = document.getElementById('project-live');
 const projectSource = document.getElementById('project-source');
+
+// Works Section
+const worksList = document.getElementById('works-list');
+
+projects.forEach((project, index) => {
+  const worksLi = document.createElement('li');
+  worksLi.className = 'works-card';
+  const content = `
+    <img
+      class="works-card-image"
+      src=${project.image}
+      alt="works card image"
+    />
+    <div class="works-card-text">
+      <h2 class="works-card-title">${project.name}</h2>
+      <div class="works-card-subtitle">
+        <p class="canopy-text">${project.company}</p>
+        <ul class="works-card-subtitle-list">
+          <li class="works-card-subtitle-element">${project.position}</li>
+          <li class="works-card-subtitle-element">${project.year}</li>
+        </ul>
+      </div>
+      <p class="works-card-description">
+        ${project.description}
+      </p>
+      <ul class="works-card-languages">
+        <li class="works-card-languages-element">html</li>
+        <li class="works-card-languages-element">css</li>
+        <li class="works-card-languages-element">javascript</li>
+      </ul>
+      <button type="button" class="purple-button card-button" id=${index}>
+        See Project
+      </button>
+    </div>
+  `;
+  worksLi.innerHTML = content;
+  worksList.appendChild(worksLi);
+});
 
 // Modal Popup
 const modal = document.getElementById('popup-modal');
@@ -105,9 +143,9 @@ projectBtns.forEach((button) => {
     projectLive.setAttribute('href', projects[button.id].live);
     projectSource.setAttribute('href', projects[button.id].source);
 
-    projects[btnId].tools.forEach((item) => {
+    projects[btnId].tools.forEach((project) => {
       const li = document.createElement('li');
-      li.innerText = item;
+      li.innerText = project;
       li.className = 'works-card-languages-element';
       projectLanguages.appendChild(li);
     });
