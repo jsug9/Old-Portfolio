@@ -145,10 +145,9 @@ projects.forEach((project, index) => {
   worksList.appendChild(worksLi);
 });
 
-// Get the button that opens the modal
+// Popup Modal
 const projectBtns = document.querySelectorAll('.card-button');
 
-// When the user clicks the button, open the modal
 const body = document.getElementById('body');
 
 const overlay = document.createElement('div');
@@ -223,4 +222,20 @@ projectBtns.forEach((button) => {
       }
     };
   });
+});
+
+// Contact Form Validation
+const email = document.getElementById('form-email')
+const errorMessage = document.getElementById('error-message')
+const form = document.getElementById('contact-form')
+
+form.addEventListener('submit', (event) => {
+  if (email.value.match(/^[a-z@.0-9-_]*$/)) {
+    errorMessage.innerHTML = '';
+    email.style.border = '1px solid green';
+  } else {
+    event.preventDefault();
+    email.style.border = '3px solid red';
+    errorMessage.textContent = 'Email should be in lower case';
+  }
 });

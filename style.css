@@ -314,6 +314,12 @@ textarea {
   color: white;
 }
 
+.error-message {
+  color: red;
+  margin-top: -3px;
+  align-self: flex-start;
+}
+
 /* Text Style */
 h1 {
   /* Header / 2 */
