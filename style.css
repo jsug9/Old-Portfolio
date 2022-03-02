@@ -486,6 +486,19 @@ ul {
   color: #396df2;
 }
 
+.purple-a-div {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  justify-content: center;
+  gap: 5px;
+}
+
+.icon-image {
+  fill: green !important;
+}
+
 .purple-button:hover,
 .popup-purple-button:hover {
   background-color: #ebebff;
@@ -657,10 +670,6 @@ ul {
   .bottom-btns {
     justify-content: space-between;
   }
-
-  .popup-purple-button {
-    padding: 5% 2.5%;
-  }
 }
 
 @media (max-width: 800px) {
@@ -801,9 +810,5 @@ ul {
 
   .bottom-btns {
     justify-content: space-around;
-  }
-
-  .popup-purple-button {
-    padding: 2.5% 5%;
   }
 }

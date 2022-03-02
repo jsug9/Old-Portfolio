@@ -72,17 +72,6 @@ const projects = [
   },
 ];
 
-// Project details
-const projectName = document.getElementById('project-name');
-const projectCompany = document.getElementById('company');
-const projectPosition = document.getElementById('position');
-const projectYear = document.getElementById('year');
-const projectImage = document.getElementById('image');
-const projectDescription = document.getElementById('description');
-const projectLanguages = document.getElementById('languages');
-const projectLive = document.getElementById('project-live');
-const projectSource = document.getElementById('project-source');
-
 // Works Section
 const worksList = document.getElementById('works-list');
 
@@ -156,50 +145,82 @@ projects.forEach((project, index) => {
   worksList.appendChild(worksLi);
 });
 
-// Modal Popup
-const modal = document.getElementById('popup-modal');
-
 // Get the button that opens the modal
 const projectBtns = document.querySelectorAll('.card-button');
 
-// Get the <span> element that closes the modal
-const span = document.getElementsByClassName('close-icon')[0];
-
 // When the user clicks the button, open the modal
+const body = document.getElementById('body');
+
+const overlay = document.createElement('div');
+overlay.setAttribute('class', 'popup');
+overlay.setAttribute('id', 'popup-modal');
+
+const popup = document.createElement('div');
+popup.setAttribute('class', 'modal');
+overlay.appendChild(popup);
+
 projectBtns.forEach((button) => {
   button.addEventListener('click', () => {
     const btnId = button.id;
-    projectName.innerHTML = projects[btnId].name;
-    projectCompany.innerHTML = projects[btnId].company;
-    projectPosition.innerHTML = projects[btnId].position;
-    projectYear.innerHTML = projects[btnId].year;
-    projectImage.src = projects[btnId].image;
-    projectDescription.innerHTML = projects[btnId].description;
-    projectLive.setAttribute('href', projects[btnId].live);
-    projectSource.setAttribute('href', projects[btnId].source);
 
-    projects[btnId].tools.forEach((project) => {
-      const li = document.createElement('li');
-      li.innerText = project;
-      li.className = 'works-card-languages-element';
-      projectLanguages.appendChild(li);
-    });
+    const content = `
+    <div class="popup-header">
+      <h2 id="project-name">${projects[btnId].name}</h2>
+      <a class="close-icon" id="close-popup">&times;</a>
+    </div>
+    <div class="works-card-subtitle" id="popup-subtitle">
+      <p class="canopy-text" id="company">${projects[btnId].company}</p>
+      <ul class="works-card-subtitle-list">
+        <li class="works-card-subtitle-element" id="position">${projects[btnId].position}</li>
+        <li class="works-card-subtitle-element" id="year">${projects[btnId].year}</li>
+      </ul>
+    </div>
+    <div class="image-div">
+      <img class="project-image" src="${projects[btnId].image}" alt="project-image" id="image">
+    </div>
+    <div class="bottom">
+      <div class="description-div">
+        <p class="project-description" id="description">${projects[btnId].description}</p>
+      </div>
+      <div class="information-div">
+        <ul class="works-card-languages" id="languages">
+        ${projects[btnId].tools.map((language) => `<li class="works-card-languages-element">${language}</li>`).join('')}
+        </ul>
+        <div class="bottom-btns">
+          <a class="popup-purple-button" id="project-live" href="${projects[btnId].live}">
+            <div class="purple-a-div">
+              <span>See Live</span>
+              <img class="icon-image" src="Resources/Icons/live.svg" alt="source icon">
+            </div>
+          </a>
+          <a class="popup-purple-button" id="project-source" href="${projects[btnId].source}">
+            <div class="purple-a-div">
+              <span>See Source</span>
+              <img class="icon-image" src="Resources/Icons/source.svg" alt="source icon">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    `;
 
-    modal.style.display = 'block';
+    popup.innerHTML = content;
+    overlay.style.display = 'block';
+    body.appendChild(overlay);
+
+    // Get the <span> element that closes the modal
+    const span = document.getElementsByClassName('close-icon')[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function closeOnClick() {
+      overlay.style.display = 'none';
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function closeOnEvent(event) {
+      if (event.target === overlay) {
+        overlay.style.display = 'none';
+      }
+    };
   });
 });
-
-// When the user clicks on <span> (x), close the modal
-
-span.onclick = function closeOnClick() {
-  modal.style.display = 'none';
-  projectLanguages.innerHTML = '';
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function closeOnEvent(event) {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-    projectLanguages.innerHTML = '';
-  }
-};
