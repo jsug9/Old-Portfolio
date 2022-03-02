@@ -91,29 +91,29 @@ projects.forEach((project, index) => {
   worksLi.className = 'works-card';
 
   const worksImg = document.createElement('img');
-  worksImg.setAttribute('class', 'works-card-image')
-  worksImg.setAttribute('src', project.image)
-  worksImg.setAttribute('alt', 'works card image')
+  worksImg.setAttribute('class', 'works-card-image');
+  worksImg.setAttribute('src', project.image);
+  worksImg.setAttribute('alt', 'works card image');
   worksLi.appendChild(worksImg);
 
   const worksTextDiv = document.createElement('div');
-  worksTextDiv.setAttribute('class', 'works-card-text')
+  worksTextDiv.setAttribute('class', 'works-card-text');
 
   const worksTitle = document.createElement('h2');
-  worksTitle.setAttribute('class', 'works-card-title')
-  worksTitle.innerHTML = project.name
-  worksTextDiv.appendChild(worksTitle)
+  worksTitle.setAttribute('class', 'works-card-title');
+  worksTitle.innerHTML = project.name;
+  worksTextDiv.appendChild(worksTitle);
 
-  const worksSubTitleDiv = document.createElement('div')
-  worksSubTitleDiv.setAttribute('class', 'works-card-subtitle')
+  const worksSubTitleDiv = document.createElement('div');
+  worksSubTitleDiv.setAttribute('class', 'works-card-subtitle');
 
   const worksCompany = document.createElement('p');
-  worksCompany.setAttribute('class', 'canopy-text')
-  worksCompany.innerHTML = project.company
-  worksSubTitleDiv.appendChild(worksCompany)
+  worksCompany.setAttribute('class', 'canopy-text');
+  worksCompany.innerHTML = project.company;
+  worksSubTitleDiv.appendChild(worksCompany);
 
-  const worksCardList = document.createElement('ul')
-  worksCardList.setAttribute('class', 'works-card-subtitle-list')
+  const worksCardList = document.createElement('ul');
+  worksCardList.setAttribute('class', 'works-card-subtitle-list');
 
   const worksPosition = document.createElement('li');
   worksPosition.innerText = project.position;
@@ -125,31 +125,31 @@ projects.forEach((project, index) => {
   worksYear.className = 'works-card-subtitle-element';
   worksCardList.appendChild(worksYear);
 
-  worksSubTitleDiv.appendChild(worksCardList)
+  worksSubTitleDiv.appendChild(worksCardList);
 
-  worksTextDiv.appendChild(worksSubTitleDiv)
+  worksTextDiv.appendChild(worksSubTitleDiv);
 
   const worksDescription = document.createElement('p');
-  worksDescription.setAttribute('class', 'works-card-description')
-  worksDescription.innerHTML = project.description
-  worksTextDiv.appendChild(worksDescription)
+  worksDescription.setAttribute('class', 'works-card-description');
+  worksDescription.innerHTML = project.description;
+  worksTextDiv.appendChild(worksDescription);
 
-  const worksLanguages = document.createElement('ul')
-  worksLanguages.setAttribute('class', 'works-card-languages')
+  const worksLanguages = document.createElement('ul');
+  worksLanguages.setAttribute('class', 'works-card-languages');
   project.tools.forEach((tool) => {
     const li = document.createElement('li');
     li.innerText = tool;
     li.className = 'works-card-languages-element';
     worksLanguages.appendChild(li);
   });
-  worksTextDiv.appendChild(worksLanguages)
+  worksTextDiv.appendChild(worksLanguages);
 
   const worksButton = document.createElement('button');
-  worksButton.setAttribute('type', 'button')
-  worksButton.setAttribute('class', 'purple-button card-button')
-  worksButton.setAttribute('id', index)
-  worksButton.innerHTML = 'See project'
-  worksTextDiv.appendChild(worksButton)
+  worksButton.setAttribute('type', 'button');
+  worksButton.setAttribute('class', 'purple-button card-button');
+  worksButton.setAttribute('id', index);
+  worksButton.innerHTML = 'See project';
+  worksTextDiv.appendChild(worksButton);
 
   worksLi.appendChild(worksTextDiv);
 
