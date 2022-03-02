@@ -495,10 +495,6 @@ ul {
   gap: 5px;
 }
 
-.icon-image {
-  fill: green !important;
-}
-
 .purple-button:hover,
 .popup-purple-button:hover {
   background-color: #ebebff;
