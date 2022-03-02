@@ -16,7 +16,7 @@ document.getElementById('closebtn').addEventListener('click', () => {
   closeNav();
 });
 
-document.querySelectorAll('.nav-bar-project').forEach((n) => n.addEventListener('click', () => {
+document.querySelectorAll('.nav-bar-link').forEach((n) => n.addEventListener('click', () => {
   document.getElementById('myNav').style.width = '0%';
 }));
 
