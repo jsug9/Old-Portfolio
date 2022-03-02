@@ -441,6 +441,12 @@ ul {
 .popup-header {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+
+.close-icon {
+  font-size: 40px;
+  color: #707582;
 }
 
 #popup-subtitle {
@@ -635,6 +641,7 @@ ul {
   }
 
   .bottom {
+    margin-top: 10px;
     flex-direction: row;
     justify-content: space-between;
   }
