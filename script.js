@@ -225,17 +225,21 @@ projectBtns.forEach((button) => {
 });
 
 // Contact Form Validation
-const email = document.getElementById('form-email')
-const errorMessage = document.getElementById('error-message')
 const form = document.getElementById('contact-form')
+const email = document.getElementById('form-email')
+const errorDiv = document.getElementById('error-div')
+const errorMessage = document.getElementById('error-message')
 
 form.addEventListener('submit', (event) => {
   if (email.value.match(/^[a-z@.0-9-_]*$/)) {
+    errorDiv.style.display = 'none'
     errorMessage.innerHTML = '';
     email.style.border = '1px solid green';
   } else {
     event.preventDefault();
     email.style.border = '3px solid red';
+    errorDiv.style.display = 'flex'
+    errorDiv.setAttribute('class', 'error-div')
     errorMessage.textContent = 'Email should be in lower case';
   }
 });

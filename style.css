@@ -314,9 +314,15 @@ textarea {
   color: white;
 }
 
+.error-div {
+  display: flex;
+  width: 100%;
+  background-color: #f47174;
+}
+
 .error-message {
-  color: red;
-  margin-top: -3px;
+  padding: 0 12px;
+  color: white;
   align-self: flex-start;
 }
 
