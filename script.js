@@ -277,31 +277,30 @@ function formValues() {
   localStorage.setItem('formValues', JSON.stringify(formValues));
 }
 
+function checkLocalStorage() {
+  let name = '';
+  let email = '';
+  let message = '';
+
+  if (JSON.parse(localStorage.getItem('formValues')) === null) {
+    name = '';
+    email = '';
+    message = '';
+  } else {
+    ({ name, email, message } = JSON.parse(localStorage.getItem('formValues')));
+  }
+
+  if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
+    formName.value = name;
+    formEmail.value = email;
+    formMessage.value = message;
+  }
+}
+
 if (storageAvailable('localStorage')) {
   formName.addEventListener('input', formValues);
   formEmail.addEventListener('input', formValues);
   formMessage.addEventListener('input', formValues);
-
-  function checkLocalStorage() {
-    let name = '';
-    let email = '';
-    let message = '';
-
-    if (JSON.parse(localStorage.getItem('formValues')) === null) {
-      name = '';
-      email = '';
-      message = '';
-    } else {
-      ({ name, email, message } = JSON.parse(localStorage.getItem('formValues')));
-    }
-
-    if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
-      formName.value = name;
-      formEmail.value = email;
-      formMessage.value = message;
-    }
-  }
-
   document.addEventListener('DOMContentLoaded', () => {
     checkLocalStorage();
   });
