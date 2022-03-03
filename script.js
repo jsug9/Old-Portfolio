@@ -234,10 +234,10 @@ form.addEventListener('submit', (event) => {
   if (email.value.match(/^[a-z@.0-9-_]*$/)) {
     errorDiv.style.display = 'none';
     errorMessage.innerHTML = '';
-    email.style.border = '1px solid green';
+    formEmail.style.border = '1px solid green';
   } else {
     event.preventDefault();
-    email.style.border = '3px solid red';
+    formEmail.style.border = '3px solid #f47174';
     errorDiv.style.display = 'flex';
     errorDiv.setAttribute('class', 'error-div');
     errorMessage.textContent = 'Email should be in lower case';

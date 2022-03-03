@@ -318,10 +318,13 @@ textarea {
   display: flex;
   width: 100%;
   background-color: #f47174;
+  border-radius: 0.5rem;
+  margin-bottom: 5px;
 }
 
 .error-message {
   padding: 0 12px;
+  font-weight: bold;
   color: white;
   align-self: flex-start;
 }
