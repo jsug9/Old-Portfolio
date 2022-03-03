@@ -231,7 +231,7 @@ const errorDiv = document.getElementById('error-div');
 const errorMessage = document.getElementById('error-message');
 
 form.addEventListener('submit', (event) => {
-  if (email.value.match(/^[a-z@.0-9-_]*$/)) {
+  if (formEmail.value.match(/^[a-z@.0-9-_]*$/)) {
     errorDiv.style.display = 'none';
     errorMessage.innerHTML = '';
     formEmail.style.border = '1px solid green';
