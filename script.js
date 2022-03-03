@@ -301,6 +301,7 @@ if (storageAvailable('localStorage')) {
   formName.addEventListener('input', formValues);
   formEmail.addEventListener('input', formValues);
   formMessage.addEventListener('input', formValues);
+  
   document.addEventListener('DOMContentLoaded', () => {
     checkLocalStorage();
   });
