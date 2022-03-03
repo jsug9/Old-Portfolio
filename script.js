@@ -224,17 +224,21 @@ projectBtns.forEach((button) => {
   });
 });
 
-// Contact Form Validation
+// Contact consts
 const form = document.getElementById('contact-form');
 const formEmail = document.getElementById('form-email');
+const formName = document.getElementById('form-name');
+const formMessage = document.getElementById('form-message');
 const errorDiv = document.getElementById('error-div');
 const errorMessage = document.getElementById('error-message');
 
+// Contact Form Validation
 form.addEventListener('submit', (event) => {
   if (formEmail.value.match(/^[a-z@.0-9-_]*$/)) {
     errorDiv.style.display = 'none';
     errorMessage.innerHTML = '';
     formEmail.style.border = '1px solid green';
+    localStorage.clear();
   } else {
     event.preventDefault();
     formEmail.style.border = '3px solid #f47174';
@@ -243,3 +247,61 @@ form.addEventListener('submit', (event) => {
     errorMessage.textContent = 'Email should be in lower case';
   }
 });
+
+// Local Storage
+
+function storageAvailable(type) {
+  let storage;
+  const x = '__storage_test__';
+
+  try {
+    storage = window[type];
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+      // everything except Firefox
+      e.code === 22 || e.code === 1014 || e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0
+    );
+  }
+}
+
+function formValues() {
+  const formValues = {
+    name: formName.value,
+    email: formEmail.value,
+    message: formMessage.value,
+  };
+
+  localStorage.setItem('formValues', JSON.stringify(formValues));
+}
+
+function checkLocalStorage() {
+  let name = '';
+  let email = '';
+  let message = '';
+
+  if (JSON.parse(localStorage.getItem('formValues')) === null) {
+    name = '';
+    email = '';
+    message = '';
+  } else {
+    ({ name, email, message } = JSON.parse(localStorage.getItem('formValues')));
+  }
+
+  if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
+    formName.value = name;
+    formEmail.value = email;
+    formMessage.value = message;
+  }
+}
+
+if (storageAvailable('localStorage')) {
+  formName.addEventListener('input', formValues);
+  formEmail.addEventListener('input', formValues);
+  formMessage.addEventListener('input', formValues);
+  document.addEventListener('DOMContentLoaded', () => {
+    checkLocalStorage();
+  });
+}
