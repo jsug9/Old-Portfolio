@@ -226,7 +226,7 @@ projectBtns.forEach((button) => {
 
 // Contact Form Validation
 const form = document.getElementById('contact-form');
-const email = document.getElementById('form-email');
+const formEmail = document.getElementById('form-email');
 const errorDiv = document.getElementById('error-div');
 const errorMessage = document.getElementById('error-message');
 
