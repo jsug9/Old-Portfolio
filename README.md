@@ -51,3 +51,7 @@ Big thanks to the people who helped me in the process:
 👤 **Abraha Kahsay**
 
 - GitHub: [@AbrahaKahsay](https://github.com/AbrahaKahsay)
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
