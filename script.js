@@ -20,9 +20,15 @@ document.querySelectorAll('.nav-bar-link').forEach((n) => n.addEventListener('cl
   document.getElementById('myNav').style.width = '0%';
 }));
 
-if (window.innerWidth >= 800) {
-  document.getElementById('myNav').style.width = 'test';
-}
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 800) {
+    document.getElementById('myNav').style.width = 'fit-content';
+  }
+
+  if (window.innerWidth <= 800) {
+    document.getElementById('myNav').style.width = '0%';
+  }
+});
 
 // Project array
 const projects = [
