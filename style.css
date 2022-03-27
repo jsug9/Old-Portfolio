@@ -576,13 +576,11 @@ ul {
     background-position-x: center;
   }
 
-  .works-card:nth-child(1),
-  .works-card:nth-child(3) {
+  .works-card:nth-child(odd) {
     flex-direction: row-reverse;
   }
 
-  .works-card:nth-child(2),
-  .works-card:nth-child(4) {
+  .works-card:nth-child(even) {
     flex-direction: row;
   }
 
