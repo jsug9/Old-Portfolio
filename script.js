@@ -65,16 +65,17 @@ const projects = [
     live: '#',
     source: '#',
   },
+
   {
-    name: 'Uber Navigation',
-    company: 'UBER',
-    position: 'Lead Developer',
-    year: '2018',
-    image: 'Resources/Snapshoot-Portfolio/snapshoot-portfolio4.svg',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    tools: ['html', 'Ruby on rails', 'css', 'javascript'],
-    live: '#',
-    source: '#',
+    name: 'First Capstone',
+    company: 'Break Out',
+    position: 'Full Stack Dev',
+    year: '2022',
+    image: 'Resources/Snapshoot-Portfolio/snapshoot-portfolio5.png',
+    description: 'A website to announce the future concert of a local rock band called Break Out with a recent rebranding.',
+    tools: ['html', 'css', 'javascript'],
+    live: 'https://jsug9.github.io/Capstone-Project-1',
+    source: 'https://github.com/jsug9/Capstone-Project-1',
   },
 ];
 
@@ -307,7 +308,7 @@ if (storageAvailable('localStorage')) {
   formName.addEventListener('input', formValues);
   formEmail.addEventListener('input', formValues);
   formMessage.addEventListener('input', formValues);
-  
+
   document.addEventListener('DOMContentLoaded', () => {
     checkLocalStorage();
   });

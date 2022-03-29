@@ -91,7 +91,6 @@ header {
 }
 
 /* Works Section */
-
 .works-list {
   display: grid;
   row-gap: 5.5rem;
@@ -108,6 +107,10 @@ header {
   border-radius: 1rem;
   border: 1px solid #707582;
   background-color: white;
+}
+
+.works-card-image {
+  border-radius: 1rem;
 }
 
 .works-card-subtitle {
@@ -476,6 +479,7 @@ ul {
 
 .project-image {
   margin: -5px 0;
+  border-radius: 1rem;
 }
 
 .bottom {
@@ -576,6 +580,14 @@ ul {
     background-position-x: center;
   }
 
+  .works-card {
+    gap: 3rem;
+    align-items: center;
+    max-width: 1104px;
+    column-gap: 46px;
+    padding: 1.5rem;
+  }
+
   .works-card:nth-child(odd) {
     flex-direction: row-reverse;
   }
@@ -586,17 +598,6 @@ ul {
 
   .works-list {
     padding: 7.125rem 4rem;
-  }
-
-  .works-card:nth-child(1),
-  .works-card:nth-child(2),
-  .works-card:nth-child(3),
-  .works-card:nth-child(4) {
-    gap: 3rem;
-    align-items: center;
-    max-width: 1104px;
-    column-gap: 46px;
-    padding: 1.5rem;
   }
 
   .works-card-image {
