@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-For a live demo of the Portfolio [click here](https://jsug9.github.io/Portfolio/).
+For a live demo of the Portfolio [click here](https://jsug9.github.io/Old-Portfolio/).
 
 ## Author
 
