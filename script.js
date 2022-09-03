@@ -168,13 +168,13 @@ projectBtns.forEach((button, index) => {
         ${projects[index].tools.map((language) => `<li class="works-card-languages-element">${language}</li>`).join('')}
         </ul>
         <div class="bottom-btns">
-          <a class="popup-purple-button" id="project-live" href="${projects[index].live}">
+          <a class="popup-purple-button" id="project-live" href="${projects[index].live}" target="_blank" rel="noopener noreferrer">
             <div class="purple-a-div">
               <span>See Live</span>
               <img class="icon-image" src="Resources/Icons/live.svg" alt="source icon">
             </div>
           </a>
-          <a class="popup-purple-button" id="project-source" href="${projects[index].source}">
+          <a class="popup-purple-button" id="project-source" href="${projects[index].source}" target="_blank" rel="noopener noreferrer">
             <div class="purple-a-div">
               <span>See Source</span>
               <img class="icon-image" src="Resources/Icons/source.svg" alt="source icon">
