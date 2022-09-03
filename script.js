@@ -165,41 +165,39 @@ const popup = document.createElement('div');
 popup.setAttribute('class', 'modal');
 overlay.appendChild(popup);
 
-projectBtns.forEach((button) => {
+projectBtns.forEach((button, index) => {
   button.addEventListener('click', () => {
-    const btnId = button.id;
-
     const content = `
     <div class="popup-header">
-      <h2 id="project-name">${projects[btnId].name}</h2>
+      <h2 id="project-name">${projects[index].name}</h2>
       <a class="close-icon" id="close-popup">&times;</a>
     </div>
     <div class="works-card-subtitle" id="popup-subtitle">
-      <p class="canopy-text" id="company">${projects[btnId].company}</p>
+      <p class="canopy-text" id="company">${projects[index].company}</p>
       <ul class="works-card-subtitle-list">
-        <li class="works-card-subtitle-element" id="position">${projects[btnId].position}</li>
-        <li class="works-card-subtitle-element" id="year">${projects[btnId].year}</li>
+        <li class="works-card-subtitle-element" id="position">${projects[index].position}</li>
+        <li class="works-card-subtitle-element" id="year">${projects[index].year}</li>
       </ul>
     </div>
     <div class="image-div">
-      <img class="project-image" src="${projects[btnId].image}" alt="project-image" id="image">
+      <img class="project-image" src="${projects[index].image}" alt="project-image" id="image">
     </div>
     <div class="bottom">
       <div class="description-div">
-        <p class="project-description" id="description">${projects[btnId].description}</p>
+        <p class="project-description" id="description">${projects[index].description}</p>
       </div>
       <div class="information-div">
         <ul class="works-card-languages" id="languages">
-        ${projects[btnId].tools.map((language) => `<li class="works-card-languages-element">${language}</li>`).join('')}
+        ${projects[index].tools.map((language) => `<li class="works-card-languages-element">${language}</li>`).join('')}
         </ul>
         <div class="bottom-btns">
-          <a class="popup-purple-button" id="project-live" href="${projects[btnId].live}">
+          <a class="popup-purple-button" id="project-live" href="${projects[index].live}">
             <div class="purple-a-div">
               <span>See Live</span>
               <img class="icon-image" src="Resources/Icons/live.svg" alt="source icon">
             </div>
           </a>
-          <a class="popup-purple-button" id="project-source" href="${projects[btnId].source}">
+          <a class="popup-purple-button" id="project-source" href="${projects[index].source}">
             <div class="purple-a-div">
               <span>See Source</span>
               <img class="icon-image" src="Resources/Icons/source.svg" alt="source icon">
